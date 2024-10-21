@@ -1,0 +1,30 @@
+
+GET http://localhost:4000/loans
+
+###
+
+POST http://localhost:4000/loans
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGU0Y2QzMmZmNTY5ZDAwMWJlYmU3NiIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTcyOTAyMzg0MywiZXhwIjoxNzI5MDI3NDQzfQ.htYxgjA89WjJ9N3Akm4SE3UU3lURA9rmAgpTztyOK34
+
+{
+  "bookId": "670d79c9ea8d19c7cfc65eb9",
+  "userId": "670e4cd32ff569d001bebe76"
+}
+
+###
+
+GET http://localhost:4000/loans/670e4cd32ff569d001bebe76/loans
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGU0Y2QzMmZmNTY5ZDAwMWJlYmU3NiIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTcyOTAyMjk5NSwiZXhwIjoxNzI5MDI2NTk1fQ.zeQiFVPXlz8iXYgjI2YHjL5foGB7BInKvVrYqV0jmnQ
+
+
+###
+
+PUT http://localhost:4000/users/670e51844f09c03e33fbac66
+Content-Type: application/json
+
+{
+  "bookId": "76576576567567"
+}
+
+###

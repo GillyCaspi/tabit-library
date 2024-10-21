@@ -1,0 +1,23 @@
+{
+     "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "start",
+            "program": "${workspaceFolder}/src/index.ts",
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "test",
+            "command": "npm run test/test_helper.ts",
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "test mocha",
+            "command": "mocha",
+        }
+    ]
+}

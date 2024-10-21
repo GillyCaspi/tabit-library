@@ -1,0 +1,110 @@
+
+
+GET http://localhost:4000/books
+
+###
+
+POST http://localhost:4000/books
+Content-Type: application/json
+
+{
+  "title": "The Lord of the Rings part 2",
+  "author": "J.R.R. Tolkien",
+  "year": 1954,
+  "stars": 1,
+  "topic": "Fantasy"
+}
+
+###
+
+GET http://localhost:4000/books/670d79c9ea8d19c7cfc65eb9
+
+###
+
+PUT http://localhost:4000/books/670d7a0cea8d19c7cfc65ebc
+Content-Type: application/json
+
+{
+  "year": 1960,
+  "stars": 1,
+  "topic": "Fantasy"
+}
+
+###
+
+DELETE http://localhost:4000/books/670d7a0cea8d19c7cfc65ebc
+
+
+###
+
+GET http://localhost:4000/books/search?year=1954
+
+
+### USERS
+
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "role": "employee"
+}
+
+###
+
+GET http://localhost:4000/users/670e4d3e2ff569d001bebe84
+
+
+###
+
+GET http://localhost:4000/users
+
+
+###
+
+PUT http://localhost:4000/users/670e4d3e2ff569d001bebe84
+Content-Type: application/json
+
+{
+  "name": "Jonathan"
+}
+
+###
+
+DELETE http://localhost:4000/users/670e4cf72ff569d001bebe7e
+
+###
+
+POST http://localhost:4000/loans
+Content-Type: application/json
+
+{
+  "bookId": "670d79c9ea8d19c7cfc65eb9",
+  "userId": "670e4cd32ff569d001bebe76",
+  "estimateReturnDate" : 1234567
+}
+
+###
+
+GET http://localhost:4000/loans/670e51844f09c03e33fbac66
+
+
+###
+
+GET http://localhost:4000/loans
+
+
+###
+
+PUT http://localhost:4000/users/670e51844f09c03e33fbac66
+Content-Type: application/json
+
+{
+  "bookId": "76576576567567"
+}
+
+###
+
+get http://localhost:4000/auth/670e4cd32ff569d001bebe76
+
+###

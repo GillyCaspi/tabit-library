@@ -1,0 +1,39 @@
+
+### USERS
+
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "role": "employee"
+}
+
+###
+
+GET http://localhost:4000/users/670e4d3e2ff569d001bebe84
+
+
+###
+
+GET http://localhost:4000/users
+
+
+###
+
+PUT http://localhost:4000/users/670e4cd32ff569d001bebe76
+Content-Type: application/json
+
+{
+  "role": "employee"
+}
+
+###
+
+DELETE http://localhost:4000/users/670e4cf72ff569d001bebe7e
+
+###
+
+get http://localhost:4000/auth/670e4cd32ff569d001bebe76
+
+###
